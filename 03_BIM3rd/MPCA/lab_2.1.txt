@@ -1,0 +1,12 @@
+/* Add two numbers store in memory locations D000H and D001H. Store the result in
+Location F000H using direct addressing modes only. */
+
+LDA D000H
+MOV B, A
+
+LDA D001H
+ADD B 
+
+STA F000H
+
+HLT  

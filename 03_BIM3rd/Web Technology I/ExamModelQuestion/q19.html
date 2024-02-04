@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cookie</title>
+  </head>
+  <body>
+    <script>
+      let userName = prompt("Enter a Username");
+      let password = prompt("Enter a password");
+
+      setCookie(userName, password);
+
+      function setCookie(name, password) {
+        document.cookie = `username = ${userName}; expires=Thu, 21 Sep 2023 12:00:00 UTC`;
+
+        document.cookie = `password=${password}; expires=Thu, 21 Sep 2023 12:00:00 UTC`;
+      }
+    </script>
+  </body>
+</html>

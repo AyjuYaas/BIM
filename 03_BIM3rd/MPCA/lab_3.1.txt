@@ -1,0 +1,15 @@
+/* Write a program to transfer twenty five 8-bit data stored in location C000H to table
+starting from D000H. */
+
+LXI B C000h
+MVI D 13h
+LXI H D000h
+
+LOOP: LDAX B
+MOV M A
+INR C
+INR L
+DCR D
+JNZ LOOP
+
+HLT

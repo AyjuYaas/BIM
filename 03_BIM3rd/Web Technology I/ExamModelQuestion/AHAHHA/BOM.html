@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="openWeb()">Click Me!</button>
+    <button onclick="closeWeb()">Close Me!</button>
+    <button onclick="find()">Find!</button>
+
+    <script>
+      function openWeb() {
+        window.open("https://sayujya.com.np", "_blank");
+      }
+      function closeWeb() {
+        window.close();
+      }
+      function find() {
+        document.write(screen.width);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.vmenu {
+  background-color: #c1ece4;
+  width: max-content;
+  height: max-content;
+  padding: 20px;
+  float: left;
+}
+.vmenu ul {
+  list-style: none;
+  padding: 0;
+}
+.vmenu li {
+  line-height: 4;
+}
+.vmenu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+.vmenu a:hover {
+  color: #3aa6b9;
+}
+#menuTopic {
+  font-size: 30px;
+  margin: -40px 0;
+  font-weight: bolder;
+}
+
+.content {
+  background-color: #ffd0d0;
+  height: 100vh;
+  margin-left: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

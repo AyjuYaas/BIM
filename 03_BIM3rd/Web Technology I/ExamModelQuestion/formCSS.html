@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form CSS</title>
+
+    <style>
+      .form {
+        display: table;
+        background-color: lightblue;
+        padding: 20px;
+      }
+      .row {
+        display: table-row;
+      }
+      input {
+        display: table-cell;
+        padding: 5px;
+      }
+      label {
+        display: table-cell;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <div class="row">
+        <label for="uname">Username</label>
+        <input type="text" name="uname" id="" />
+      </div>
+
+      <div class="row">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="" />
+      </div>
+
+      <div class="row">
+        <label for="country">Country</label>
+        <select name="country" id="">
+          <option value="none" selected hidden>Select a Country</option>
+          <option value="Nepal">Nepal</option>
+          <option value="India">India</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="submit" name="submit" id="" />
+      </div>
+    </div>
+  </body>
+</html>

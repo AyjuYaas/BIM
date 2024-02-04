@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JaavaScript</title>
+  </head>
+  <body>
+    <form onsubmit="return myFunction()">
+      <label for="uname">Username:</label>
+      <input type="text" name="uname" id="username" /> <br />
+      <br />
+
+      <label for="pass">Password:</label>
+      <input type="password" name="pass" id="password" /> <br /><br />
+
+      <label for="country">Country:</label>
+      <select name="country" id="country">
+        <option value="none" selected hidden>Select a Country</option>
+        <option value="India">India</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="China">China</option>
+      </select>
+      <br /><br />
+
+      <input type="submit" name="submit" />
+    </form>
+
+    <script>
+      function myFunction() {
+        uname = document.getElementById("username").value;
+        pass = document.getElementById("password").value;
+        country = document.getElementById("country").value;
+
+        // Check if username has length 8;
+        if (uname.length !== 8) {
+          alert("Username Must be 8 character long");
+          return false;
+        }
+        // Check if password starts with number and is alphanumeric
+        if (!/^[0-9]/.test(pass) || !/^[a-zA-Z0-9]+$/.test(pass)) {
+          alert("Password should start with a number and be alphanumeric");
+          return false;
+        }
+
+        //Check if country field is empty
+        if (country === "none" || country === "") {
+          alert("Select a Country!");
+          return false;
+        }
+
+        return true;
+      }
+    </script>
+  </body>
+</html>

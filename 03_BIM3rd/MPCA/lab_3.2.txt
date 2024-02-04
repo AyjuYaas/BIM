@@ -1,0 +1,18 @@
+/* Two tables contain ten 8 bit data starting from C000H and D000H .Add respective
+locations and store result at table starting from E000H. */
+
+LXI B C000h
+LXI H D000h
+MVI D 0Ah
+
+LOOP: LDAX B
+ADD M
+MVI B E0h
+STAX B
+MVI B C0h
+INR C
+INR L
+DCR D
+JNZ LOOP
+
+HLT

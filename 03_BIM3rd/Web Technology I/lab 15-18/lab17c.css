@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  color: #fed049;
+}
+
+body {
+  background-color: #1a374d;
+}
+
+#topic {
+  background-color: #406882;
+  font-size: 70px;
+  border: 10px solid #fa4659;
+  padding: 50px;
+  width: max-content;
+  margin: auto;
+}
+
+#box {
+  background-color: #6998ab;
+  border: 10px solid #09c6ab;
+}
+
+.para {
+  text-align: justify;
+  font-size: 50px;
+  font-weight: bolder;
+  padding: 50px;
+}

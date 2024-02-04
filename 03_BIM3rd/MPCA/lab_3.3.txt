@@ -1,0 +1,26 @@
+/* Two tables contain ten 8 bit data starting from C000H and D000H .Add respective
+locations and store 01H if result is greater than FFh else store result at table starting from
+E000H. */
+
+LXI B C000h
+LXI H D000h
+MVI D 0Ah
+
+LOOP: LDAX B
+MVI B E0h
+ADD M
+JC ONE
+
+STAX B
+
+CONT: MVI B C0h
+INR C
+INR L
+DCR D
+JNZ LOOP
+
+HLT
+
+ONE: MVI A 01h
+STAX B
+JMP CONT

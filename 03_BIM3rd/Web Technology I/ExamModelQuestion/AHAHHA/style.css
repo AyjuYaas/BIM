@@ -1,0 +1,56 @@
+/* SIMPLE SELECTORS  */
+
+/*ELEMENT SELECTOR */
+h1 {
+}
+/* ID SELSECTOR */
+#hi {
+  background-color: blue;
+}
+/* CLASS SELSECTOR */
+.hi2 {
+  background-color: green;
+}
+/* UNIVERSAL SELETORS */
+* {
+  padding: 20px;
+}
+
+/* COMBINATION SELECTORS */
+/* MULTIPLE/GROUP SELECTOR  */
+h1,
+h2 {
+  font-size: 50px;
+}
+/* DESCENDENT SELECTORS  */
+div h1 {
+  font-size: 20px;
+}
+/* CHILD SELCTORS */
+div > h1 {
+  color: red;
+}
+/* ADJACENT SIBLING SELECTORS */
+div + p {
+  font-size: 50px;
+  color: green;
+}
+/* GENERAL SIBLING SELECTORS */
+div ~ p {
+  font-size: 50px;
+}
+
+/* PSEUDO CLASS SELECTORS */
+div:hover {
+  background-color: yellow;
+}
+
+/*PSEUDO ELEMENT SELECTOR*/
+a::before {
+  content: url("abc.jpg");
+}
+
+/* ATTRIBUTE SELECTORS */
+a[target="_blank"] {
+  color: brown;
+}
