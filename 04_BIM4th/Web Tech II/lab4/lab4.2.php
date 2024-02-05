@@ -56,7 +56,7 @@
         $cir = new Circle(3);
         $tri = new Triangle(4, 5);
 
-        echo $rec->area() . "<br />" . $cir->area() . "<br />" . $tri->area() . "<br />" 
+        echo "<h3>Areas of:</h3>Rec = " . $rec->area() . "<br />Circle = " . $cir->area() . "<br />Triangle = " . $tri->area() . "<br />" 
     ?>
 </body>
 </html>

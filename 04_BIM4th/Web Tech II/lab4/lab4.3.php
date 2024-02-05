@@ -35,8 +35,8 @@
         $em = array();
 
         $em[0] = new Employee(1, "Sayu", "sayu@gmail.com", 50000);
-        $em[1] = new Employee(1, "Sandy", "sandi@gmail.com", 10000);
-        $em[2] = new Employee(1, "Sarun", "sarun@gmail.com", 20000);
+        $em[1] = new Employee(2, "Sandy", "sandi@gmail.com", 10000);
+        $em[2] = new Employee(3, "Sarun", "sarun@gmail.com", 20000);
 
         foreach($em as $e){
             echo '<tr>
