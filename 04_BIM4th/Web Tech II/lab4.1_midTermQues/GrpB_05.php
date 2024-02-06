@@ -15,6 +15,7 @@
                 }
                 else{
                     unlink($filePath);
+                    //
                 }
             }
         }
