@@ -4,5 +4,5 @@
 
 <li>BIM 1st [ C ]</li>
 <li>BIM 2nd [ C, JAVA ]</li>
-<li>BIM 1st [ HTML, CSS, JS, JAVA ]</li>
-<li>BIM 1st [ PHP, Oracle(MySQL) ]</li>
+<li>BIM 3rd [ HTML, CSS, JS, JAVA ]</li>
+<li>BIM 4th [ PHP, Oracle(MySQL) ]</li>
