@@ -6,7 +6,7 @@ from borrower, loan;
 Perryridge branch. */
 select b.customer_name, b.loan_number, l.amount
 from borrower b
-JOIN loan l ON b.loan_number = l.loan_number
+join loan l ON b.loan_number = l.loan_number
 where l.branch_name = 'Perryridge';
 
 /* 7. Find the name, loan number and loan amount of all customers; rename the column
@@ -26,7 +26,7 @@ Brooklyn. */
 select branch_name
 from branch
 where assets > (
-    select MIN(assets)
+    select AVG(assets)
     from branch
     where branch_city = 'Brooklyn'
 );

@@ -21,3 +21,4 @@ where amount is null;
 /* 20. Find total of all loan amounts */
 select sum(amount)
 from loan;
+
