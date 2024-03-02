@@ -32,8 +32,12 @@
         
             $createQuery = "CREATE TABLE tbl_students (
                 StudentId INT(3) NOT NULL AUTO_INCREMENT,
-                FirstName VARCHAR(30) NOT NULL,
-                LastName VARCHAR(30) NOT NULL,
+                Username VARCHAR(30) NOT NULL,
+                Password VARCHAR(30) NOT NULL,
+                Email VARCHAR(30) NOT NULL,
+                Gender VARCHAR(7) NOT NULL,
+                Country VARCHAR(6) NOT NULL,
+                Hobbies VARCHAR(50) NOT NULL,
                 PRIMARY KEY (StudentId)
             );";
 
