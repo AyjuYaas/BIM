@@ -1,10 +1,10 @@
 @extends('layout')
 
 @section('title')  
-    {{title}}
+    {{$title}}
 @endsection
 
 @section('content')
-    {{body}}
+    <h1>{{$body}}</h1>
 @endsection
 

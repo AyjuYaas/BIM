@@ -16,7 +16,7 @@
             $username = $_POST['username'];
             $password = $_POST['password'];
 
-            if($username === 'SuperUser' && $password === 'California'){
+            if($username === 'S' && $password === 'C'){
                 $message = "Login Succesful";
                 $color = "green";
                 header("location: lab6.4.php");

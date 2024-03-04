@@ -18,4 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/home', 'HomeController@index');
+Route::get('/home', 'App\Http\Controllers\HomeController@index');
+
+Route::get("/feedback", 'App\Http\Controllers\feedbackSend@showForm');
+Route::post("/feedback", 'App\Http\Controllers\feedbackSend@getData');

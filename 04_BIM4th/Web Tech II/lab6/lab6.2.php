@@ -21,7 +21,7 @@
             $serverName = "localhost";
             $username = "root";
             $password = "";
-            $dbname = "sayu";
+            $dbname = "test_123";
             
             $conn = new mysqli($serverName, $username, $password, $dbname);
             if($conn->connect_error){

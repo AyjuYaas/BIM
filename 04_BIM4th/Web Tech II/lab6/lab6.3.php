@@ -5,7 +5,7 @@
         $serverName = "localhost";
         $username = "root";
         $password = "";
-        $dbName = "sayu";
+        $dbName = "test_123";
 
         $conn = new mysqli($serverName, $username, $password, $dbName);
         if($conn->connect_error){
@@ -21,7 +21,7 @@
         $hobby = $_POST['hobbies'];
 
         $addQuery = "INSERT INTO tbl_students (Username, Password, Email, Gender, Country, Hobbies)
-        VALUES ('$username', '$password', '$email', '$gender', '$country', '$hobby');";
+                    VALUES ('$username', '$password', '$email', '$gender', '$country', '$hobby');";
 
         try{
             if($conn->query($addQuery) === TRUE){
