@@ -22,5 +22,5 @@ WHERE E.COMMISSION_PCT IS NOT NULL;
 
 -- 5. List all the department numbers in the Employees table. Remove duplication if any
 -- Department id occurs more than once.
-SELECT UNIQUE E.DEPARTMENT_ID
+SELECT DISTINCT E.DEPARTMENT_ID
 FROM EMPLOYEES E;

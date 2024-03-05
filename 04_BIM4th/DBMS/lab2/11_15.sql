@@ -1,0 +1,30 @@
+-- 11. Find all employees whose manager is one of the three, i.e. with manager number 7902,
+-- 7566 or 7788.
+SELECT E.FIRST_NAME||' '||E.LAST_NAME AS FULL_NAME,
+       M.FIRST_NAME AS MANAGER_NAME, M.PHONE_NUMBER AS MANAGER_PHONE_NUMBER
+FROM EMPLOYEES E
+JOIN EMPLOYEES M ON E.MANAGER_ID = M.EMPLOYEE_ID
+WHERE M.PHONE_NUMBER LIKE '%1234%' OR
+    M.PHONE_NUMBER LIKE '%4567%' OR 
+    M.PHONE_NUMBER LIKE '%5555%';
+
+-- 12. List all employees whose name starts with S.
+SELECT E.FIRST_NAME
+FROM EMPLOYEES E 
+WHERE E.FIRST_NAME LIKE 'S%';
+
+-- 13. List employees whose names are exactly 4 characters in length.
+SELECT E.FIRST_NAME 
+FROM EMPLOYEES E 
+WHERE LENGTH(E.FIRST_NAME) = 4;
+
+-- 14. List all managers with salaries over Rs. 1500.
+SELECT E.FIRST_NAME, J.JOB_TITLE, E.SALARY
+FROM EMPLOYEES E 
+JOIN JOBS J ON E.JOB_ID = J.JOB_ID
+WHERE J.JOB_TITLE LIKE '%Manager%' AND E.SALARY >= 1500;
+
+-- 15. Display all employees who were hired during 1997.
+SELECT E.FIRST_NAME||' '||E.LAST_NAME AS EMPLOYEE_NAME, E.HIRE_DATE
+FROM EMPLOYEES E 
+WHERE E.HIRE_DATE LIKE '%-97';
