@@ -1,3 +1,4 @@
+// Lab 6 : WAP in C to implement Banker’s algorithm.
 #include <stdio.h>
 
 int main() {

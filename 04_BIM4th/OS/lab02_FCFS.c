@@ -1,4 +1,4 @@
-// 2 WAP in C to implement First Come First Serve Scheduling Algorithm
+// lab2: WAP in C to implement First Come First Serve Scheduling Algorithm
 
 #include<stdio.h>
 int main(){

@@ -1,3 +1,5 @@
+// Lab 5 : WAP in C to implement Producer - Consumer Problem.
+
 #include <stdio.h>
 #include <stdlib.h>
 

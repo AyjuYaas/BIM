@@ -1,3 +1,5 @@
+// Lab 4 : WAP in C to implement Shortest Job First(SJF) algorithm.
+
 #include <stdio.h>
 int main() {
     int bt[20], p[20], wt[20], tat[20], i, j, n, total = 0, pos, temp;
