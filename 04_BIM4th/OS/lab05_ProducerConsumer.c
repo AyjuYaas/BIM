@@ -12,7 +12,7 @@ void producer() {
     --empty;
     data++;
 
-    printf("\nProducer produces item number: %d\n", data);
+    printf("\nProducer produces item number: %d", data);
 
     // Release Lock
     ++lock;
@@ -22,7 +22,7 @@ void consumer() {
     // decrementing the value of lock, consumer is using the buffer
     --lock;
 
-    printf("\nConsumer consumes item number: %d.\n", data);
+    printf("\nConsumer consumes item number: %d", data);
 
     // full slot is decreased, empty slot is increased, data is decreased
     --full;
@@ -54,7 +54,7 @@ int main() {
                 if ((lock == 1) && (empty != 0))
                     producer();
                 else
-                    printf("The Buffer is full. New data cannot be produced!");
+                    printf("Buffer is full");
 
                 break;
 
