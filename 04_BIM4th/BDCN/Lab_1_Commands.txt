@@ -1,0 +1,16 @@
+Basic Windows Network Command
+
+- ipconfig
+- ipconfig/all
+- ping 192.168.174.1 (Or any other address)
+- pathing google.com
+- tracert google.com
+- ping yahoo.com -t -l 3000
+- netstat -e
+- nslookup
+  > google.com
+  > sxc.edu.np
+- getmac
+- arp -a
+- route
+- routeprint

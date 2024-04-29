@@ -1,8 +1,53 @@
 # BIM LAB WORKS
 
-## All the lab works for BIM (2021 batch)
+## All The Lab Works For BIM (2021 batch)
 
-<li>BIM 1st [ C ]</li>
-<li>BIM 2nd [ C, JAVA ]</li>
-<li>BIM 3rd [ HTML, CSS, JS, JAVA ]</li>
-<li>BIM 4th [ PHP, Oracle (MySQL), C (OS) ]</li>
+### Programming Languages and Tools Used:
+
+### BIM 1st
+
+<a href="https://devdocs.io/c/"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="c" width="50" height="50"/> 
+</a> &emsp;
+
+### BIM 2nd
+
+<a href="https://devdocs.io/c/"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="c" width="50" height="50"/> 
+</a> &emsp;
+<a href="https://docs.oracle.com/en/java/"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="java" width="50" height="50"/> 
+</a> &emsp;
+
+### BIM 3rd
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/HTML"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" alt="html5" width="50" height="50"/>
+</a> &emsp;
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" alt="css3" width="50" height="50"/> 
+</a> &emsp;
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="50"/>
+</a> &emsp;
+<a href="https://docs.oracle.com/en/java/"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="java" width="50" height="50"/> 
+</a> &emsp;
+
+### BIM 4th
+
+<a href="https://www.php.net/docs.php"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="php" width="50" height="50"/> 
+</a> &emsp;
+<a href="https://laravel.com/"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="laravel" width="50" height="50"/> 
+</a> &emsp;
+<a href="https://docs.oracle.com/en/database/oracle/oracle-database/"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" alt="oracle-db" width="50" height="50"/> 
+</a> &emsp;
+<a href="https://devdocs.io/c/"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="c" width="50" height="50"/> 
+</a> &emsp;
+<a href="https://www.netacad.com/courses/packet-tracer"> 
+    <img src="https://e7.pngegg.com/pngimages/372/849/png-clipart-logo-design-business-networking-hardware-computer-network-business-computer-network-text.png" alt="cisco-packet-tracker" width="50" height="50"/> 
+</a> &emsp;
