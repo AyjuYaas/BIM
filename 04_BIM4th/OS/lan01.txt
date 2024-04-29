@@ -1,0 +1,42 @@
+Exercise 1: Getting Started
+
+Logging In:
+Use the provided credentials to log in to the Linux system.
+- Terminal Access:
+    Open the terminal application.
+
+Exercise 2: Basic Commands
+- Navigating the File System:
+    =>Use the pwd command to display the current working directory.
+    =>Use ls to list the contents of the current directory.
+    =>Use cd to navigate to different directories (cd directory_name).
+
+- Creating and Manipulating Files:
+    =>Create a new directory named "Lab_Files" using mkdir.
+    =>Move into the "Lab_Files" directory using cd.
+    =>Create a new file named "example.txt" using touch.
+    =>Use echo to add some content to "example.txt".
+    =>Display the contents of "example.txt" using cat or less.
+
+- Managing Files and Directories:
+    =>Rename "example.txt" to "sample.txt" using mv.
+    =>Make a copy of "sample.txt" named "sample_copy.txt" using cp.
+    =>Remove "sample.txt" using rm.
+    =>Remove the "Lab_Files" directory and its contents using rm -r.
+
+Exercise 3: Working with Permissions
+- Viewing Permissions:
+    =>Use ls -l to display the detailed listing of files and directories.
+    =>Observe the permissions (read, write, execute) for different users (owner, group, others).
+
+- Changing Permissions:
+    =>Use chmod to change the permissions of a file (e.g., chmod 644 filename).
+
+Exercise 4: System Information
+- Viewing System Information:
+    =>Use uname -a to display kernel information.
+    =>Use df -h to check disk space usage.
+    =>Use free -m to display memory usage.
+- Managing Processes:
+    =>Use ps to list the currently running processes.
+    =>Terminate a process using kill.
