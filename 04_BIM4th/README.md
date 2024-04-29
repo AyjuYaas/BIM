@@ -2,7 +2,8 @@
 
 All the Materials of BIM 4th Semester.
 
-The Programming Languages Used: <br />
-=> PHP (Web Technology II) <br />
-=> Oracle (Database Management System) <br />
-=> C (Operating System)
+The Programming Languages Used: \
+=> PHP & Laravel (Web Technology II) \
+=> Oracle (Database Management System)\
+=> C (Operating System)\
+=> CISCO Packet Tracker (Business Data Communication and Networking)
