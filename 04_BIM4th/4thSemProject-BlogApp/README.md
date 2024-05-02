@@ -3,5 +3,5 @@
 A simple project done in laravel and mysql for the completition of 4th Sem Project.
 
 By:
-Sayujya Satyal
+Sayujya Satyal \
 021BIM054
