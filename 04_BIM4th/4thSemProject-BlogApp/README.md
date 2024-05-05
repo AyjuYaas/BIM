@@ -16,10 +16,11 @@ A simple project done in laravel and mysql for the completition of 4th Sem Proje
 
 ## PREVIEW
 
-<img src="./preview/01_home.png" />
-<img src="./preview/02_login.png" />
-<img src="./preview/03_view.png" />
-<img src="./preview/04_create.png" />
+<img src="./public/Prev/01home.png" />
+<img src="./public/Prev/02login.png" />
+<img src="./public/Prev/03view.png" />
+<img src="./public/Prev/04create.png" />
+
 <br /> <br />
 By:
 Sayujya Satyal <br />
