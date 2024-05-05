@@ -49,12 +49,11 @@ form {
     padding-bottom: 1.5rem;
     width: 40vw;
     margin: 3rem auto;
-    border-radius: 1rem;
+    border-radius: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 
 .login-div img {
@@ -62,13 +61,20 @@ form {
 }
 
 .login-div h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #415a77;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .login-div form {
     width: 70%;
+}
+
+.login-buttons {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -77,8 +83,9 @@ form {
     }
 
     .login-div .login-buttons {
-        display: flex;
         flex-direction: column;
         gap: 1rem;
+        justify-content: center;
+        align-items: center;
     }
 }
