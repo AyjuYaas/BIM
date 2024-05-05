@@ -22,6 +22,7 @@ form {
 .card {
     margin: 20px auto;
 }
+
 .card-text {
     text-align: justify;
 }
@@ -30,16 +31,4 @@ form {
     text-decoration: none;
     margin-right: 10px;
     color: inherit;
-}
-
-.contact {
-    margin: auto;
-    margin-top: 100px;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact i:hover {
-    transform: scale(1.1);
 }

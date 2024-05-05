@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class BlogPost extends Component {
+class IndividualBlog extends Component {
     public $title;
     public $body;
     public $id;
@@ -20,6 +20,6 @@ class BlogPost extends Component {
      * Get the view / contents that represent the component.
      */
     public function render(): View|Closure|string {
-        return view('components.blog-post');
+        return view('Blog.components.individual-blog');
     }
 }

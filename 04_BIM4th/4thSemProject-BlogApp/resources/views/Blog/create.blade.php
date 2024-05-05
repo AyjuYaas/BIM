@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('Blog.layout.main')
 @push('title')
     {{ $title }}
 @endpush
@@ -20,11 +20,11 @@
             </span>
         </div>
         <div class="mb-3">
-            <label for="body" class="form-label">Body</label>
-            <textarea name="body" id="form-control" class="form-control" cols="30" rows="10">{{ $blog->body }}</textarea>
+            <label for="body" class="form-label">Content</label>
+            <textarea name="content" id="form-control" class="form-control" cols="30" rows="10">{{ $blog->content }}</textarea>
 
             <span class="text-danger">
-                @error('body')
+                @error('content')
                     {{ $message }}
                 @enderror
             </span>

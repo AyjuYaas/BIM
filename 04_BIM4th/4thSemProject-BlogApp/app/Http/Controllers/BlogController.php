@@ -3,74 +3,167 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use function Laravel\Prompts\alert;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Blog;
 
+
 class BlogController extends Controller {
+    private $loginKey = "";
+
     public function index() {
-        $blogs = Blog::all();
-        $data = compact("blogs");
-        return view('home')->with($data);
+        return view("Login.welcome");
+    }
+    public function login() {
+        return view('Login.login');
+    }
+    public function register() {
+        return view('Login.register');
     }
 
-    public function iblog($id) {
-        $blog = Blog::find($id);
-        $data = compact('blog');
-        return view('iblog')->with($data);
+    public function handleLogin(Request $request) {
+        $credentials = $request->validate([
+            'email' => ['required', 'email'],
+            'password' => ['required'],
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            $this->loginKey = Auth::user()->id;
+            return redirect('/blog')->with('success', $this->loginKey);
+        }
+
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ])->onlyInput('email');
+    }
+
+    public function handleRegister(Request $request) {
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'password' => [
+                'required',
+                'min:6',
+                'regex:/^.*(?=.{3,})(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[\d\x])(?=.*[!$#%]).*$/'
+            ]
+        ]);
+
+        if (User::where('email', '=', $request['email'])->count() > 0) {
+            return redirect('/')->with('failure', 'Account Already Exists, Login to Continue');
+        } else {
+            $user = new User;
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->password = bcrypt($request->password);
+
+            $user->save();
+
+            return redirect('/')->with('success', 'Successfully Created Your Account');
+        }
+    }
+
+    public function logout(Request $request) {
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+
+        return redirect('/');
+    }
+
+    public function blog(Request $request) {
+        if (Auth::guest()) {
+            return redirect('/');
+        } else {
+            $id = Auth::user()->id;
+            $blogs = Blog::where('user_id', '=', $id)->orderBy('updated_at', 'DESC')->get();
+            $data = compact("blogs");
+            return view('Blog.blog')->with($data);
+        }
     }
 
     public function create() {
-        $url = url('/create');
-        $title = 'Create-Blog';
-        $active = 'active';
-        $button = 'Submit';
-        $arr = ['title' => "", 'body' => ""];
-        $blog = (object) $arr;
-        $data = compact("title", "active", "button", "url", "blog");
-        return view('create')->with($data);
-    }
-
-    public function contact() {
-        return view('contact');
+        if (Auth::guest()) {
+            return redirect('/');
+        } else {
+            $url = url('/create');
+            $title = 'Create-Blog';
+            $active = 'active';
+            $button = 'Submit';
+            $arr = ['title' => "", 'content' => ""];
+            $blog = (object) $arr;
+            $data = compact("title", "active", "button", "url", "blog");
+            return view('Blog.create')->with($data);
+        }
     }
 
     public function store(Request $request) {
-        $blog = new Blog();
-        $blog->title = $request->title;
-        $blog->body = $request->body;
-        $blog->save();
+        if (Auth::guest()) {
+            return redirect('/');
+        } else {
+            $blog = new Blog();
+            $blog->title = $request->title;
+            $blog->content = $request->content;
+            $blog->user_id = Auth::user()->id;
+            $blog->save();
+            return redirect('/blog')->with('success', 'Succesfully Posted');
+        }
+    }
 
-        return redirect('/')->with('success', 'Succesfully Posted');
+    public function iblog($id) {
+        if (Auth::guest()) {
+            return redirect('/');
+        } else {
+            $blog = Blog::find($id);
+            $data = compact('blog');
+            return view('Blog.iblog')->with($data);
+        }
     }
 
     public function deleteBlog($id) {
-        $blog = Blog::find($id);
-        if (!is_null($blog)) $blog->delete();
+        if (Auth::guest()) {
+            return redirect('/');
+        } else {
+            $blog = Blog::find($id);
+            if (!is_null($blog)) $blog->delete();
 
-        return redirect('/');
+            return redirect('/blog');
+        }
     }
 
     function editBlog($id) {
-        $blog = Blog::find($id);
-        if (!is_null($blog)) {
-            $url = url('/update/') . '/' . $id;
-            $title = 'Update-Blog';
-            $active = "";
-            $button = "Update";
-            $data = compact('blog', 'url', 'title', 'active', 'button');
-            return view('create')->with($data);
-        }
+        if (Auth::guest()) {
+            return redirect('/');
+        } else {
+            $blog = Blog::where('blog_id', '=', $id)->where('user_id', '=', Auth::user()->id)->first();
+            if (!is_null($blog)) {
+                $url = url('/update/') . '/' . $id;
+                $title = 'Update-Blog';
+                $active = "";
+                $button = "Update";
+                $data = compact('blog', 'url', 'title', 'active', 'button');
+                return view('Blog.create')->with($data);
+            }
 
-        return redirect('/');
+            return redirect('/');
+        }
     }
 
     function updateBlog($id, Request $request) {
-        $blog = Blog::find($id);
-        if (!is_null($blog)) {
-            $blog->title = $request->title;
-            $blog->body = $request->body;
-            $blog->save();
-        }
+        if (Auth::guest()) {
+            return redirect('/');
+        } else {
+            $blog = Blog::where('blog_id', '=', $id)->where('user_id', '=', Auth::user()->id)->first();
+            if (!is_null($blog)) {
+                $blog->title = $request->title;
+                $blog->content = $request->content;
+                $blog->save();
+            }
 
-        return redirect()->route('ind.blog', ['id' => $id]);
+            return redirect()->route('ind-blog', ['id' => $id]);
+        }
     }
 }
