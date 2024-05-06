@@ -28,7 +28,8 @@
                         <a class="nav-link @stack('create-active')" href="{{ url('/create') }}">Create</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link @stack('logout-active')" href="{{ url('/logout') }}">Logout</a>
+                        <a class="nav-link @stack('logout-active')" href="{{ url('/logout') }}">Logout <i
+                                class="fa-solid fa-right-from-bracket"></i></a>
                     </li>
                 </ul>
             </div>

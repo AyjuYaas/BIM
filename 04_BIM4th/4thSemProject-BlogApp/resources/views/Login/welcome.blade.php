@@ -18,8 +18,10 @@
         <img src="./images/blog-icon.png" alt="">
         <h1>Your Own Personal Blog</h1>
         <div class="login-buttons">
-            <a href="{{ url('/login') }}"><button type="button" class="btn btn-primary">Login</button></a>
-            <a href="{{ url('/register') }}"><button type="button" class="btn btn-dark">Register</button></a>
+            <a href="{{ url('/login') }}"><button type="button" class="btn btn-primary">Login <i
+                        class="fa-solid fa-right-to-bracket"></i></button></a>
+            <a href="{{ url('/register') }}"><button type="button" class="btn btn-dark">Register <i
+                        class="fa-solid fa-address-card"></i></button></a>
         </div>
     </div>
 @endsection

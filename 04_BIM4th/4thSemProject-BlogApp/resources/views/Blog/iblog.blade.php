@@ -12,11 +12,11 @@
             <p class="text-sm-end" style="font-size: 0.9rem; color: #778da9">{{ $blog->updated_at }}</p>
             <a class="no-underline-button" href="{{ route('edit-blog', ['id' => $blog->blog_id]) }}">
 
-                <button type="button" class="btn btn-dark">Edit</button>
+                <button type="button" class="btn btn-dark">Edit <i class="fa-solid fa-pen-to-square"></i></button>
             </a>
             <a class="no-underline" href="{{ route('delete-blog', ['id' => $blog->blog_id]) }}">
 
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="button" class="btn btn-danger">Delete <i class="fa-solid fa-trash"></i></button>
             </a>
         </div>
     </div>

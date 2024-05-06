@@ -30,7 +30,7 @@
                 <label class="form-label">Password</label>
                 <input type="password" class="form-control" name="password" />
             </div>
-            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="submit" class="btn btn-primary">Register <i class="fa-solid fa-address-card"></i></button>
         </form>
     </div>
 @endsection
