@@ -121,9 +121,12 @@ class BlogController extends Controller {
         if (Auth::guest()) {
             return redirect('/');
         } else {
-            $blog = Blog::find($id);
-            $data = compact('blog');
-            return view('Blog.iblog')->with($data);
+            $blog = Blog::where('blog_id', '=', $id)->where('user_id', '=', Auth::user()->id)->first();
+            if (!is_null($blog)) {
+                $data = compact('blog');
+                return view('Blog.iblog')->with($data);
+            }
+            return redirect('/blog');
         }
     }
 
@@ -131,7 +134,7 @@ class BlogController extends Controller {
         if (Auth::guest()) {
             return redirect('/');
         } else {
-            $blog = Blog::find($id);
+            $blog = Blog::where('blog_id', '=', $id)->where('user_id', '=', Auth::user()->id)->first();
             if (!is_null($blog)) $blog->delete();
 
             return redirect('/blog');
