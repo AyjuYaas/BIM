@@ -104,6 +104,10 @@ class BlogController extends Controller {
         if (Auth::guest()) {
             return redirect('/');
         } else {
+            $request->validate([
+                'title' => 'required',
+                'content' => 'required',
+            ]);
             $blog = new Blog();
             $blog->title = $request->title;
             $blog->content = $request->content;

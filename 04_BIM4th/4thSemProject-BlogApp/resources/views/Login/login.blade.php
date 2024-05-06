@@ -27,6 +27,8 @@
                 <input type="password" class="form-control" name="password" />
             </div>
             <button type="submit" class="btn btn-primary">Login <i class="fa-solid fa-right-to-bracket"></i></button>
+            <span>No Account?</span>
+            <a href="{{ url('/register') }}">Register</a>
         </form>
     </div>
 @endsection

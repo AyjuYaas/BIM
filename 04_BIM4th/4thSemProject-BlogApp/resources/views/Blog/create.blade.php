@@ -5,6 +5,10 @@
 @push('create-active')
     {{ $active }}
 @endpush
+
+@push('name')
+    {{ Auth::user()->name . "'s" }}
+@endpush
 @section('contents')
     <form method="post" action="{{ $url }}">
         @csrf

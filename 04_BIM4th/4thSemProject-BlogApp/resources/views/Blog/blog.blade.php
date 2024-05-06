@@ -4,6 +4,10 @@
     active
 @endpush
 
+@push('name')
+    {{ Auth::user()->name . "'s" }}
+@endpush
+
 @section('contents')
     @foreach ($blogs as $blog)
         <x-individual-blog title="{{ $blog->title }}" body="{{ $blog->content }}" id="{{ $blog->blog_id }}" />
