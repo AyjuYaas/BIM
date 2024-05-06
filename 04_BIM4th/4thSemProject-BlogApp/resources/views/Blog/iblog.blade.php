@@ -3,7 +3,7 @@
     {{ $blog->title }}
 @endpush
 @push('name')
-    {{ Auth::user()->name . "'s" }}
+    {{ strtok(Auth::user()->name, ' ') . "'s" }}
 @endpush
 @section('contents')
     <div class="card border-light mb-3" style="width: 95vw;">

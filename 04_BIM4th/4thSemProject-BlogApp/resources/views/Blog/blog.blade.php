@@ -5,7 +5,7 @@
 @endpush
 
 @push('name')
-    {{ Auth::user()->name . "'s" }}
+    {{ strtok(Auth::user()->name, ' ') . "'s" }}
 @endpush
 
 @section('contents')
