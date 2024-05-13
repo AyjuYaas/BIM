@@ -1,4 +1,6 @@
-<!-- Re-use the Lab 5’s third program to authenticate the user from the database. If the student is authenticated successfully, redirect to another page and show the list of available students in the database -->
+<!-- Re-use the Lab 5’s third program to authenticate the user from the database. If the student is authenticated successfully, 
+redirect to another page and show the list of available students in the database -->
+
 <table border="1">
     <tr>
         <th>ID</th>
@@ -9,7 +11,7 @@
         <th>Country</th>
         <th>Hobbies</th>
     </tr>
-<?php
+    <?php
     $server = "localhost";
     $username = "root";
     $password = "";
@@ -17,29 +19,28 @@
 
     $conn = new mysqli($server, $username, $password, $dbname);
 
-    if($conn->connect_error){
-        die("Database Connection failed");        
+    if ($conn->connect_error) {
+        die("Database Connection failed");
     }
 
     $selectQuery = 'SELECT * from tbl_students;';
 
-    try{
+    try {
         $result = $conn->query($selectQuery);
-        while($row = $result->fetch_assoc()){
+        while ($row = $result->fetch_assoc()) {
             echo '<tr>
                     <td>' . $row["StudentId"] . '</td>' .
-                '<td>' . $row["Username"] . '</td>'.
-                '<td>' . $row["Password"] . '</td>'.
-                '<td>' . $row["Email"] . '</td>'.
-                '<td>' . $row["Gender"] . '</td>'.
-                '<td>' . $row["Country"] . '</td>'.
+                '<td>' . $row["Username"] . '</td>' .
+                '<td>' . $row["Password"] . '</td>' .
+                '<td>' . $row["Email"] . '</td>' .
+                '<td>' . $row["Gender"] . '</td>' .
+                '<td>' . $row["Country"] . '</td>' .
                 '<td>' . $row["Hobbies"] . '</td>';
-        
         }
-    }catch(Exception $err){
+    } catch (Exception $err) {
         die($err);
     }
 
     $conn->close();
-?>
+    ?>
 </table>
