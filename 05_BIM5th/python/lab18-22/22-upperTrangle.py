@@ -1,4 +1,4 @@
-# Create an 2D array of size 3 x 3 the display the upper triangle
+#22 Create an 2D array of size 3 x 3 the display the upper triangle
 
 mat = [
     [1, 2, 3],

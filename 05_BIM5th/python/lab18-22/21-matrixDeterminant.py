@@ -1,4 +1,4 @@
-# Create an 2D array of size 3 x 3 then find the determinant
+#21 Create an 2D array of size 3 x 3 then find the determinant
 
 # import numpy as np
 

@@ -1,4 +1,4 @@
-# Create an 2D array of size 2 x 2 then perform the matrix sum
+#20 Create an 2D array of size 2 x 2 then perform the matrix sum
 
 mat1 = [ 
     [1, 2],
@@ -20,5 +20,4 @@ for i in range(2):
     for j in range(2):
         print(matSum[i][j], end=" ")
     print()
-    
 
