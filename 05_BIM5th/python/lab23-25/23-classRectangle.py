@@ -7,14 +7,21 @@
 class Rectangle:
     length = 0
     breadth = 0
+    area = 0
     def Set(self):
         self.length = int(input("Enter Length: "))
         self.breadth = int(input("Enter Breadth: "))
     
     def Calculate(self):
-        area = self.length * self.breadth
-        print("Area of Rectangle =", area)
+        self.area = self.length * self.breadth
+        print("Area of Rectangle =", self.area)
 
-rec = Rectangle()
-rec.Set()
-rec.Calculate()
+class Imain:
+    @staticmethod
+    def main():
+        rec = Rectangle()
+        rec.Set()
+        rec.Calculate()
+
+if __name__ == "__main__":
+    Imain.main()

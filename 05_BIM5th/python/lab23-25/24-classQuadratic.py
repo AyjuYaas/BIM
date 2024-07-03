@@ -26,7 +26,13 @@ class Quadratic:
     def Display(self):
         print(f"The Roots Are: {self.x1}, {self.x2}")
 
-quad = Quadratic()
-quad.Input()
-quad.Calculate()
-quad.Display()
+class Imain:
+    @staticmethod
+    def main():
+        quad = Quadratic()
+        quad.Input()
+        quad.Calculate()
+        quad.Display()
+
+if __name__ == "__main__":
+    Imain.main()

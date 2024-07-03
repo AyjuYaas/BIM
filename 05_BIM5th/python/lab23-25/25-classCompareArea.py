@@ -17,13 +17,20 @@ class Rectangle:
     def displayArea(self):
         print(f"Area = {self.area}")
 
-rec1 = Rectangle(12, 13)
-rec2 = Rectangle(4, 9)
+class Imain:
+    @staticmethod
+    def main():
+        rec1 = Rectangle(12, 13)
+        rec2 = Rectangle(4, 9)
 
-rec1.computeArea()
-rec2.computeArea()
+        rec1.computeArea()
+        rec2.computeArea()
 
-if(rec1.area > rec2.area):
-    rec1.displayArea()
-else:
-    rec2.displayArea()
+        if(rec1.area > rec2.area):
+            rec1.displayArea()
+        else:
+            rec2.displayArea()
+
+if __name__ == "__main__":
+    Imain.main()
+
