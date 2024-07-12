@@ -3,13 +3,15 @@
 # return and print in the main function
 
 class Factorial:
-    result = 1
+    def __init__(self):
+        self.result = 1
     
     def FindFact(self, n:int):
         while( n != 1 ):
             self.result *= n
             n -= 1
         return self.result
+    
 class Main:
     @staticmethod
     def main():

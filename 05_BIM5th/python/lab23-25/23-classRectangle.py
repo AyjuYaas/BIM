@@ -5,9 +5,11 @@
 # Create another class Imain having main () function to create an object of Rectangle class and invoke the function.
 
 class Rectangle:
-    length = 0
-    breadth = 0
-    area = 0
+    def __init__(self):
+        self.length = 0
+        self.breadth = 0
+        self.area = 0
+
     def Set(self):
         self.length = int(input("Enter Length: "))
         self.breadth = int(input("Enter Breadth: "))

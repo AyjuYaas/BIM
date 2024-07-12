@@ -2,7 +2,8 @@
 # int Sum(int[ ] a) then calculate the sum of array elements and return and print int the main function
 
 class ArraySum:
-    sum = 0
+    def __init__(self):
+        self.sum = 0
     
     def Sum(self, a: int) -> int:
         for i in a:

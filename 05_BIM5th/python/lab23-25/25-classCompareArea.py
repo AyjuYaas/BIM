@@ -4,12 +4,10 @@
 # that creates two objects of Rectangle class and find their areas and display area of larger rectangle.
 
 class Rectangle:
-    length = 0
-    breadth = 0
-    area = 0
     def __init__(self, l, b):
         self.length = l
         self.breadth = b
+        self.area = 0
 
     def computeArea(self):
         self.area = self.length * self.breadth
