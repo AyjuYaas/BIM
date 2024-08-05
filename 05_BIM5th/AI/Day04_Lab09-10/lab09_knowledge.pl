@@ -19,11 +19,15 @@ female(sophia).
 
 
 % Rules
-sibling_of(X, Y) :- parent_of(Z, X), parent_of(Z, Y), X/=Y.
-sister_of(X, Y) :- sibling_of(X, Y), female(X)
-brother_of(X, Y) :- sibling_of(X, Y), male(X)
+sibling_of(X, Y) :- parent_of(Z, X), parent_of(Z, Y), X \= Y.
+sister_of(X, Y) :- sibling_of(X, Y), female(X).
+brother_of(X, Y) :- sibling_of(X, Y), male(X).
 
-% Queries
+% Queries (Use the following Queries in the prolog)
 % a. parent_of(georgeI, charlesI).
 % b. parent_of(charlesI, catherine).
+% c. parent_of(charlesI, georgeI).
+% d. sister_of(X, Y).
+% e. brother_of(X, Y)
+% f. sibling_of(X, Y)
 
