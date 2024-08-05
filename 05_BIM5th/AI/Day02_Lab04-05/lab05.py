@@ -11,7 +11,7 @@ def check_board(board, col):
     if col >= len(board):
         return True
     
-    # Iterates over all teh rows
+    # Iterates over all the rows
     for i in range(len(board)):
         # Checks if it is safe to place the queen
         if is_safe(board, i, col):
