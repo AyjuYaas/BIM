@@ -15,13 +15,15 @@ class VacuumCLeanAgent:
             print(f"Checking Position ({x},{y}):")
         else:
             self.move_down()
+
     
     def move_down(self):
         x, y = self.position
         if( x < len(self.places)-1 ):
             x+=1
-            self.position = (x, 0)
-            print(f"Checking Position ({x},{y}):")
+        y = 0
+        self.position = (x, y)
+        print(f"Checking Position ({x},{y}):")
     
     def cleanPlace(self):
         x, y = self.position
@@ -46,5 +48,3 @@ places = [
 ]
 agent = VacuumCLeanAgent(places)
 agent.run()
-
-

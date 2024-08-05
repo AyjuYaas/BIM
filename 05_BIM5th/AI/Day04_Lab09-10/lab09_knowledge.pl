@@ -24,6 +24,7 @@ sister_of(X, Y) :- sibling_of(X, Y), female(X).
 brother_of(X, Y) :- sibling_of(X, Y), male(X).
 
 % Queries (Use the following Queries in the prolog)
+% consult('yourfilepath/lab09_knowledge.pl').
 % a. parent_of(georgeI, charlesI).
 % b. parent_of(charlesI, catherine).
 % c. parent_of(charlesI, georgeI).
