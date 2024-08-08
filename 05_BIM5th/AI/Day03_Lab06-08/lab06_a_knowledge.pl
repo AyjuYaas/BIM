@@ -55,12 +55,9 @@ different_tastes(X, Y) :- likes(X, A), likes(Y, B), A \= B.
 % Concatenation of two lists
 % append([pizza, burger], [sushi, salad], Result).
 
-% Insert an element into a list
-% insert_at_beginning(apple, [banana, cherry], Result).
-
 % Delete an element from a list
 % delete([pizza, burger, sushi], sushi, Result).
 
 % Append an element to a list
-% append_element(apple, [banana, cherry], Result).
+% append([apple, banana, cherry, date], [fig], Result).
 

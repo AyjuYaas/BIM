@@ -29,6 +29,6 @@ brother_of(X, Y) :- sibling_of(X, Y), male(X).
 % b. parent_of(charlesI, catherine).
 % c. parent_of(charlesI, georgeI).
 % d. sister_of(X, Y).
-% e. brother_of(X, Y)
-% f. sibling_of(X, Y)
+% e. brother_of(X, Y).
+% f. sibling_of(X, Y).
 
