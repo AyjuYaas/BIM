@@ -16,6 +16,6 @@ class Main:
     def main():
         arr = [1, 2, 3, 4, 5]
         arraySum = ArraySum()
-        print(arraySum.Sum(arr))
+        print("Sum:", arraySum.Sum(arr))
 
 if __name__ == "__main__" : Main.main()
