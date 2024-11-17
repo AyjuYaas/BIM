@@ -21,7 +21,7 @@ def main():
     # Alice chooses the private key a
     # a is the chosen private key
     a = 4
-    print("The private key a for Alice:", a)
+    print("The private key a for Ram:", a)
 
     # Gets the generated key
     x = power(G, a, P)
@@ -29,7 +29,7 @@ def main():
     # Bob chooses the private key b
     # b is the chosen private key
     b = 3
-    print("The private key b for Bob:", b)
+    print("The private key b for Sita:", b)
 
     # Gets the generated key
     y = power(G, b, P)
@@ -38,8 +38,8 @@ def main():
     ka = power(y, a, P)  # Secret key for Alice
     kb = power(x, b, P)  # Secret key for Bob
 
-    print("Secret key for Alice is:", ka)
-    print("Secret key for Bob is:", kb)
+    print("Secret key for Ram is:", ka)
+    print("Secret key for Sita is:", kb)
 
 if __name__ == "__main__":
     main()

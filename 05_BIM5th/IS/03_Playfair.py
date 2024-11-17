@@ -13,8 +13,10 @@ def playfair_cipher(plaintext, key, mode):
     
     # Split the plaintext into digraphs, padding with 'x' if necessary  
     plaintext = plaintext.lower().replace(' ', '').replace('j', 'i')  
+    
     if len(plaintext) % 2 == 1:  
         plaintext += 'x'  
+    
     digraphs = [plaintext[i:i+2] for i in range(0, len(plaintext), 2)]  
     
     # Define the encryption/decryption functions  
@@ -61,7 +63,7 @@ plaintext = 'Sayujya'
 key = 'hello'  
 ciphertext = playfair_cipher(plaintext, key, 'encrypt')  
 
-print(ciphertext) # outputs: "iisggymlgmsyjqu"  
+print("Encrypted Text: ", ciphertext) # outputs: "iisggymlgmsyjqu"  
 
 decrypted_text = playfair_cipher(ciphertext, key, 'decrypt')  
-print(decrypted_text)# (Note: 'x' is added as padding)  
+print("Decrypted Text: ", decrypted_text)# (Note: 'x' is added as padding)  
