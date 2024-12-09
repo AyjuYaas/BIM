@@ -1,6 +1,6 @@
 # BIM 3rd
 
-This Directory Contains all The Resources and Works Done on BIM 3rd Semester
+This Directory Contains all The Resources and Works Done in BIM 3rd Semester
 
 The Programming Languages Used:
 

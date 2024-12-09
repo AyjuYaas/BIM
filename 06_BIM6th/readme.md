@@ -1,6 +1,6 @@
 # BIM 6th
 
-This Directory Contains all The Resources and Works Done on BIM 6th Semester
+This Directory Contains all The Resources and Works Done in BIM 6th Semester
 
 The Programming Languages Used:
 

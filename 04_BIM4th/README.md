@@ -1,6 +1,6 @@
 # BIM 4th
 
-This Directory Contains all The Resources and Works Done on BIM 4th Semester
+This Directory Contains all The Resources and Works Done in BIM 4th Semester
 
 The Programming Languages/Tools Used:
 

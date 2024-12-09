@@ -1,6 +1,6 @@
 # BIM 5th
 
-This Directory Contains all The Resources and Works Done on BIM 5th Semester
+This Directory Contains all The Resources and Works Done in BIM 5th Semester
 
 The Programming Languages Used:
 

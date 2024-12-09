@@ -1,6 +1,6 @@
 # BIM 2nd
 
-This Directory Contains all The Resources and Works Done on BIM 2nd Semester \
+This Directory Contains all The Resources and Works Done in BIM 2nd Semester \
 \
 The Programming Languages Used:
 
