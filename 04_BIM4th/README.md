@@ -1,9 +1,14 @@
-# BIM4th
+# BIM 4th
 
-All the Materials of BIM 4th Semester.
+This Directory Contains all The Resources and Works Done on BIM 4th Semester\
 
-The Programming Languages Used: \
-=> PHP & Laravel (Web Technology II) \
-=> Oracle (Database Management System)\
-=> C (Operating System)\
-=> CISCO Packet Tracker (Business Data Communication and Networking)
+The Programming Languages/Tools Used: \
+
+- **PHP & Laravel**
+  - [IT 239: Web Technology II] \
+- **Oracle**
+  - [IT 220: Database Management System]\
+- **C**
+  - [IT 241: Operating System]\
+- **CISCO Packet Tracker**
+  - [IT 240: Business Data Communication and Networking]

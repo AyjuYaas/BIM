@@ -51,3 +51,18 @@
 <a href="https://www.netacad.com/courses/packet-tracer"> 
     <img src="https://e7.pngegg.com/pngimages/372/849/png-clipart-logo-design-business-networking-hardware-computer-network-business-computer-network-text.png" alt="cisco-packet-tracker" width="50" height="50"/> 
 </a> &emsp;
+
+### BIM 5th
+
+<a href="https://www.python.org/doc/"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python" width="50" height="50"/> 
+</a> &emsp;
+
+### BIM 6th
+
+<a href="https://www.python.org/doc/"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python" width="50" height="50"/> 
+</a> &emsp;
+<a href="https://learn.microsoft.com/en-us/sql/?view=sql-server-ver16"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg" alt="MicrosoftSQLServer" width="50" height="50"/> 
+</a> &emsp;

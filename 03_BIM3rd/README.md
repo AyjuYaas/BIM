@@ -1,6 +1,10 @@
-# BIM 3rd Semester
-All the Materials of BIM 3rd Semester.
+# BIM 3rd
+
+This Directory Contains all The Resources and Works Done on BIM 3rd Semester\
 
 The Programming Languages Used:\
-=> Java (Discrete Structure and Algorithm)\
-=> HTML, CSS, JS (Web Technlogy I)
+
+- **Java**
+  - [IT 238: Data Structure and Algorithms] \
+- **HTML, CSS, JS**
+  - [IT 237: Web Technology I]

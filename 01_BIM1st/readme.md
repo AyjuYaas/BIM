@@ -1,5 +1,8 @@
-# BIM 1ST SEMESETER
-The Following Directory Contains all The Resources and Works Done on BIM 1st Semester\
+# BIM 1ST
+
+This Directory Contains all The Resources and Works Done on BIM 1st Semester\
 \
-The Programming Language Used:\
-=> C
+The Programming Language Used:
+
+- **C**
+  - [IT 232: C Programming]

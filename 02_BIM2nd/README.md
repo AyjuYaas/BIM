@@ -1,6 +1,10 @@
-# BIM2nd
-This Directory Contains all the materials of BIM 2nd Semester.
+# BIM 2nd
 
+This Directory Contains all The Resources and Works Done on BIM 2nd Semester \
+\
 The Programming Languages Used:\
-=> Java\
-=> C (For Discrete Structure)
+
+- **Java**
+  - [IT 234 Object Oriented Programming with Java] \
+- **C**
+  - [IT 235: Discrete Structure]
