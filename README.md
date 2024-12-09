@@ -64,5 +64,5 @@
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="python" width="50" height="50"/> 
 </a> &emsp;
 <a href="https://learn.microsoft.com/en-us/sql/?view=sql-server-ver16"> 
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" alt="MicrosoftSQLServer" width="50" height="50"/> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="MicrosoftSQLServer" width="50" height="50"/> 
 </a> &emsp;
