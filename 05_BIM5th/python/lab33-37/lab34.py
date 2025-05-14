@@ -16,5 +16,6 @@ value = ('021bim054', )
 
 myCursor.execute(sql, value)
 conn.commit()
+
 print(myCursor.rowcount, 'rows deleted')
 conn.close()

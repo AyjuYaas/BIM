@@ -11,9 +11,10 @@ myDb = conn.connect(
 
 myCursor = myDb.cursor()
 
-sql = "UPDATE student SET Rollno = '056' WHERE Rollno = '021bim056'"
+sql = "UPDATE student SET Rollno = '%s' WHERE Rollno = '%s'"
+value = ('056', '021BIM054')
 
-myCursor.execute(sql)
+myCursor.execute(sql, value)
 myDb.commit()
 print(myCursor.rowcount, "data updated")
 myDb.close()

@@ -11,8 +11,16 @@ myDb = conn.connect(
 
 myCursor = myDb.cursor()
 
-myCursor.execute('SELECT * FROM student')
+sql = "SELECT * FROM student WHERE Rollno = '%s'"
+value = ('021BIM054', )
+
+myCursor.execute(sql, value)
+
+# sql = "SELECT * FROM student"
+# myCursor.execute(sql)
+
 result = myCursor.fetchall()
+
 for x in result:
     print(x)
 
