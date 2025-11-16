@@ -66,3 +66,15 @@
 <a href="https://learn.microsoft.com/en-us/sql/?view=sql-server-ver16"> 
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="MicrosoftSQLServer" width="50" height="50"/> 
 </a> &emsp;
+<a href="https://www.wireshark.org/"> 
+    <img src="https://miro.medium.com/v2/1*sOhbhWnnmBx7TxHddLPW0Q.png" alt="wireshark" width="50" height="50"/> 
+</a> &emsp;
+
+### BIM 7th
+
+<a href="https://nextjs.org/docs"> 
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg" alt="nextjs" width="50" height="50"/> 
+</a> &emsp;
+<a href="https://www.techspot.com/downloads/7362-weka.html"> 
+    <img src="https://www.techspot.com/images2/downloads/topdownload/2021/01/2021-01-07-ts3_thumbs-ee2.png" alt="nextjs" width="50" height="50"/> 
+</a> &emsp;

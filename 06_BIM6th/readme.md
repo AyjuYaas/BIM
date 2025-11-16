@@ -6,3 +6,6 @@ The Programming Languages Used:
 
 - **Python, Microsoft SQL Server**
   - [IT 245: Business Information Systems]
+    <br>
+- **Kali Linux, Nmap, Wireshark, Hydra**
+  - [IT 246: IT Ethics and Cybersecurity]
